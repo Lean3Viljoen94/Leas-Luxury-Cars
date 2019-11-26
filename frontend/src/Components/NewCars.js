@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+
 // import "./cars.css";
 
 // fetch the API we want to use (backend)
@@ -216,11 +218,12 @@ class NewCars extends React.Component {
         <br />
         <div>
           {this.state.cars.map(car => {
-            // If showOnlyOldCars() is clicked (true) then we will map only the cars with model less than 2014. 
+            // If showOnlyOldCars() is clicked (true) then we will map only the cars with model less than 2009. 
             // If showOnlyOldCars() is false (this can toggle) we will display all cars. 
-            if (!this.props.showOnlyOldCars || (this.props.showOnlyOldCars && car.model < "2014")) {
+            if (!this.props.showOnlyOldCars || (this.props.showOnlyOldCars && car.model < "2009")) {
               return (
                 <div key={car._id}>
+                  <Card>   
                   Make: {car.make}
                   <br />
                   Model: {car.model}
@@ -245,6 +248,7 @@ class NewCars extends React.Component {
                   >
                     Delete
                   </Button>
+                  </Card>
                 </div>
               );
             } else {

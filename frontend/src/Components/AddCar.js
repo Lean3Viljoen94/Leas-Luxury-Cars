@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-// import Cars from "./Components/Cars";
+import NewCars from "./NewCars";
 
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
@@ -16,6 +16,7 @@ class AddCar extends React.Component {
 
   // this function toggles whether we show all cars or only show card older than 5 years. 
   toggleOldCarsOnly = e => {
+      console.log("clicked");
     this.setState({
       showOnlyOldCars: !this.state.showOnlyOldCars
     });
@@ -32,15 +33,15 @@ class AddCar extends React.Component {
               Edit existing car details by clicking on the Edit button.
             </p>
             <p>
-              Please note that the "Model" field is required. 
+              Please note that the "model" field is required. 
             </p>
             <Button variant="outline-info" onClick={this.toggleOldCarsOnly}>
-              View all cars older than 5 years
+              View all cars older than 10 years
             </Button>
           </Container>
         </Jumbotron>
         <br></br>
-        {/* <Cars showOnlyOldCars={this.state.showOnlyOldCars}></Cars> */}
+        <NewCars showOnlyOldCars={this.state.showOnlyOldCars}></NewCars>
       </div>
     );
   }

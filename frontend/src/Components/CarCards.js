@@ -18,6 +18,7 @@ function CarCards() {
     <CardGroup>
       <Card key={car.imageURL}>
       <Card.Title className="vehicleName">{car.vehicle}</Card.Title>
+      <div className="imgTextDiv">
       <div class="imgDiv">
         <Card.Img variant="top" src={pink1} alt="Oops, this image is not available. " class="carImg"/>
       </div>
@@ -31,6 +32,7 @@ function CarCards() {
             <small>PRICE: {car.sellingPrice} </small>
           </Card.Text>
         </Card.Body>
+        </div>
         </div>
         <Card.Footer>
           <Button>See more</Button>

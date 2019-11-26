@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.imgTextDiv{
+  display: flex;
+  flex-direction: row;
+}
 
 .vehicleName{
   font-family: 'Raleway', sans-serif;
@@ -13,7 +17,7 @@
 }
 
 .imgDiv{
-  display: flex;
+  /* display: flex; */
 }
 
 .row{
