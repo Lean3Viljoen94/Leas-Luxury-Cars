@@ -2,21 +2,59 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.vehicleName{
+  font-family: 'Raleway', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carImg {
+  height: 200px;
+  width: 300px;
+  align-self: center;
+}
+
+.imgDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.row{
+  display: block;
+}
+
+.bg-dark {
+  background-color: pink !important;
+  height: 240px;
+}
+
+.carousel-slider{
+  height: 500px;
+}
+
+.filterDiv {
+  display: flex;
+  margin-left: auto;
+}
+
+.dropdown {
+  padding: 60px;
+}
+
+.btn-primary {
+  background-color: pink;
+  border-color: pink;
+  color: black;
+  width: 300px;
+}
+
+.navbar-brand {
+  font-family: 'Allura', cursive;
+  font-size: 90px;
+}
+
+.mr-auto {
+  padding-left: 10%;
+}
+
+.nav-link {
+  padding-right: 1cm;
+  padding-left: 1cm;
 }
